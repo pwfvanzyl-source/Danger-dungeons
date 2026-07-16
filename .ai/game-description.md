@@ -78,3 +78,6 @@ Butler HP 180 + or - X actions: Heal: 70
 Royal knight HP 230 + or - X actions: attack: 170
 soldier HP: 180 + or - X actions: attack: 100
 adviser HP 50 + or - X actions: summon: summons 2 gaurds and 1 royal knight
+## Idea: A roguelike where rooms shift each run and traps evolve
+
+A roguelike where rooms shift each run and traps evolve
