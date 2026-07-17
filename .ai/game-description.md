@@ -20,7 +20,7 @@ The story plays of in a giant fortress, where you seek to vanquish an evil king
 floors:
 Each floor has a battle and a shop.
 Your HP resets every floor
-Every x floors, There is a forge and an ally bell.
+Every x floors, There is a forge, scrapper and an ally bell.
 X is the difficulty: easy: 5, normal: 10, Hard: 15
 Every 20 levels, there is a boss
 
@@ -137,6 +137,7 @@ floor 81-100
 %10 common %10 uncommon %40 rare %30 epic %10 legendary
 
 dice's:
+You have a limit of 20 dice in your dice bag. each turn, seven dice are taken out of the bag. Dice only go back into the bag once youve rolled them or if the battle is done. dice can be permanently removed at the scrapper. If a dice is confiscated, it will not return to your dice bag till the end of battle. If all dice are confiscated, confiscated dice are returned to your dice bag.
 
 common:
 
@@ -151,3 +152,22 @@ d12: 1-12
 d20: 1-20
 coin: 1-2, if even, multiply all even dice with x4. same goes when its face is uneven
 magnetic dice: 1-6, all other dice are attracted to this dice
+
+rare:
+cross dice: 1-6, creates a cross across the board. all dice within the cross is multiplied by the number on this dice face
+Multi dice: 1-6, creates an X across the board. all dice within the cross is multiplied by the number on this dice face
+
+epic:
+
+unbalanced dice: 0,0,0,0,0,6, if you roll a six with this dice, add up all the dice values and multiply it by 6. This is now this dice's face
+all-or-nothing: 1-6, if you roll a one with this dice, it is confiscated. X this dice's value with selected dice. That number is now this dice's value
+
+legendary:
+
+ticking dice: 1,1,2,2,3,3, when this dice is rolled 5 times, multiply all dice values with the added value of this dices last 5 values
+vampire dice: 10,20,30,40,50,60, all dice in a radius around this dice is confiscated. +10 value to this dice for every dice confiscated in this way
+
+cards: 
+
+common:
+shuffle
