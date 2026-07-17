@@ -1,0 +1,30 @@
+[gd_scene load_steps=1 format=3]
+
+[node name="MainMenu" type="Control"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Title" type="Label" parent="MainMenu"]
+text = "Danger Dungeons"
+horizontal_alignment = 1
+rect_min_size = Vector2(600,80)
+rect_position = Vector2(0,48)
+
+[node name="Menu" type="VBoxContainer" parent="MainMenu"]
+rect_min_size = Vector2(300,200)
+rect_position = Vector2(240,180)
+
+script = ExtResource( 1 )
+
+[ext_resource path="res://scenes/MainMenu.gd" type="Script" id=1]
+
+[node name="PlayButton" type="Button" parent="MainMenu/Menu"]
+text = "Play"
+
+[node name="OptionsButton" type="Button" parent="MainMenu/Menu"]
+text = "Options"
+
+[node name="QuitButton" type="Button" parent="MainMenu/Menu"]
+text = "Quit"

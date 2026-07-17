@@ -149,4 +149,5 @@ uncommon:
 d10: 1-10
 d12: 1-12
 d20: 1-20
-coin: 1-2, if even, duplicate all even dice
+coin: 1-2, if even, multiply all even dice with x4. same goes when its face is uneven
+magnetic dice: 1-6, all other dice are attracted to this dice

@@ -1,0 +1,8 @@
+[gd_scene load_steps=1 format=3]
+
+[node name="Game" type="Node2D"]
+
+[node name="Label" type="Label" parent="Game"]
+text = "Game Scene Placeholder"
+horizontal_alignment = 1
+rect_position = Vector2(200,100)
