@@ -1,30 +1,54 @@
 [gd_scene load_steps=1 format=3]
 
+[ext_resource type="Script" path="res://scenes/MainMenu.gd" id="1_u4n3m"]
+
 [node name="MainMenu" type="Control"]
-anchor_left = 0.0
-anchor_top = 0.0
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u4n3m")
 
-[node name="Title" type="Label" parent="MainMenu"]
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -300.0
+offset_top = 48.0
+offset_right = 300.0
+offset_bottom = 128.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 48
 text = "Danger Dungeons"
 horizontal_alignment = 1
-rect_min_size = Vector2(600,80)
-rect_position = Vector2(0,48)
+vertical_alignment = 1
 
-[node name="Menu" type="VBoxContainer" parent="MainMenu"]
-rect_min_size = Vector2(300,200)
-rect_position = Vector2(240,180)
+[node name="Menu" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -260.0
+offset_right = 150.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
 
-script = ExtResource( 1 )
-
-[ext_resource path="res://scenes/MainMenu.gd" type="Script" id=1]
-
-[node name="PlayButton" type="Button" parent="MainMenu/Menu"]
+[node name="PlayButton" type="Button" parent="Menu"]
+layout_mode = 2
 text = "Play"
 
-[node name="OptionsButton" type="Button" parent="MainMenu/Menu"]
+[node name="OptionsButton" type="Button" parent="Menu"]
+layout_mode = 2
 text = "Options"
 
-[node name="QuitButton" type="Button" parent="MainMenu/Menu"]
+[node name="QuitButton" type="Button" parent="Menu"]
+layout_mode = 2
 text = "Quit"
