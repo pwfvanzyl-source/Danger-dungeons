@@ -168,6 +168,19 @@ ticking dice: 1,1,2,2,3,3, when this dice is rolled 5 times, multiply all dice v
 vampire dice: 10,20,30,40,50,60, all dice in a radius around this dice is confiscated. +10 value to this dice for every dice confiscated in this way
 
 cards: 
+You can play cards before or after you roll your dice
 
 common:
-shuffle
+shuffle: shuffle your dice into your dice bag and draw 7 dice
+Heal: heal 30 HP off your hero
+entimidate: -3 Shield on opponent
+
+uncommon:
+empower: +5 strength
+duplicate: create a clone of selected dice 
+shield: gives you Half of your total HP as a shield
+
+rare: 
+Lucky: + %50 luck
+
+
