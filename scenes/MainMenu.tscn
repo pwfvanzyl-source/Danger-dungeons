@@ -92,3 +92,51 @@ text = "Save Slot 3"
 [node name="BackButton" type="Button" parent="SaveSlotsPanel/VBoxContainer"]
 layout_mode = 2
 text = "Back"
+
+[node name="CharacterSelectionPanel" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -220.0
+offset_top = -160.0
+offset_right = 220.0
+offset_bottom = 160.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CharacterSelectionPanel"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="CharacterSelectionPanel/VBoxContainer"]
+layout_mode = 2
+text = "Choose your character"
+horizontal_alignment = 1
+
+[node name="CharlieButton" type="Button" parent="CharacterSelectionPanel/VBoxContainer"]
+layout_mode = 2
+text = "Charlie"
+
+[node name="GoobButton" type="Button" parent="CharacterSelectionPanel/VBoxContainer"]
+layout_mode = 2
+text = "Goob"
+
+[node name="MarshyButton" type="Button" parent="CharacterSelectionPanel/VBoxContainer"]
+layout_mode = 2
+text = "Marshy"
+
+[node name="LikenButton" type="Button" parent="CharacterSelectionPanel/VBoxContainer"]
+layout_mode = 2
+text = "Liken"
+
+[node name="FromoButton" type="Button" parent="CharacterSelectionPanel/VBoxContainer"]
+layout_mode = 2
+text = "Fromo"
+
+[node name="BackButton" type="Button" parent="CharacterSelectionPanel/VBoxContainer"]
+layout_mode = 2
+text = "Back"

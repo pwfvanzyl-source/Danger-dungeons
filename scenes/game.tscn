@@ -1,6 +1,9 @@
 [gd_scene load_steps=1 format=3]
 
+[ext_resource type="Script" path="res://scripts/Game.gd" id="1_f1"]
+
 [node name="Game" type="Node2D"]
+script = ExtResource("1_f1")
 
 [node name="Label" type="Label" parent="Game"]
 text = "Game Scene Placeholder"

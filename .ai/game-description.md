@@ -15,21 +15,19 @@ You roll dices and play cards to kill enemies and clear out the fortresses 100 f
 ## Story/Setting
 The story plays of in a giant fortress, where you seek to vanquish an evil king
 
-## Game Features:
-
-difficulty:
+## difficulty:
 there are 4 difficulties:
 easy, normal, hard, impossable
 To unlock impossable, beat hard with all 5 characters
 
-floors:
+## floors:
 Each floor has a battle and a shop.
 Your HP resets every floor
 Every x floors, There is a forge, scrapper and an ally bell.
 X is the difficulty: easy: 5, normal: 10, Hard: 15
 Every 20 levels, there is a boss
 
-Enemies and their bosses:
+## Enemies and their bosses:
 
 HP: how much damage an enemy or ally or hero can sustain before dying
 
@@ -89,7 +87,7 @@ X: difficulty: Easy: -10, normal: +0, hard: +10, Impossable: X2
 The true final Boss: The mad king HP: 2400 actions: attack: 540, summon: summon 7 royal knights
 
 
-Hero's:
+# Hero's:
 
 Abilities: They are passive traits
 Super: It is a activatable ability that charges up %X every enemy killed (X being difficulty: easy: %20 normal: %10 hard: %5)
@@ -100,14 +98,14 @@ marshy: Ability: starts with a lucky charm. Super: shadow clone: create's a dupl
 liken: Ability: you and your allies gain 1 strength for every point of HP you've healed this dungeon. Super: giga drain: drains half of your opponents HP and distributes it among your allies
 fromo: Ability: gain +50% on rolls. Super: Giga shield: You create a shield ally with your amount of HP. Your enemies must first defeat this shield before they can hurt you.
 
-Hero's race:
+# Hero's race:
 Charlie: bunny
 goob: slime
 marshy: alien
 liken: intellegent plant organism
 fromo: human
 
-Hero's weapons:
+# Hero's weapons:
 
 shots: how many times something attacks.If enemy dies with shots left, you will attack the next enemy. damage = roll / shots + %10 every shot
 range: how many enemies are attacked in one shot
@@ -119,11 +117,11 @@ marshy: blade: 1 shot. range: 1. knuckle blades: 2 shot. range: 3. chain 'n blad
 liken: healing potion: 1 shot. range: 1 ally (HP heal: roll / 4) / enemy. healing gun: 1 shot. range: 1 ally (HP heal: roll / 2) / enemy. healing pulser: 1 shot. all allies / all enemies (damage dealt: roll / 2)
 fromo: molotov: 5 sec. range: 5. flaming blade: 1 shot. 7 enemies. flamethrower: 7 sec. 3 enemies
 
-allies:
+## allies:
 
 Allies are enemies you've killed. they are summonable by using the ally bell. you decide what they do this turn.
 
-rarity:
+## rarity:
 common, uncommon, rare, epic, legendary
 
 floor 1-20:
@@ -143,7 +141,7 @@ floor 81-100
 
 %10 common %10 uncommon %40 rare %30 epic %10 legendary
 
-dice's:
+## dice's:
 You have a limit of 20 dice in your dice bag. each turn, seven dice are taken out of the bag. Dice only go back into the bag once youve rolled them or if the battle is done. dice can be permanently removed at the scrapper. If a dice is confiscated, it will not return to your dice bag till the end of battle. If all dice are confiscated, confiscated dice are returned to your dice bag.
 
 common:
@@ -170,11 +168,12 @@ unbalanced dice: 0,0,0,0,0,6, if you roll a six with this dice, add up all the d
 all-or-nothing: 1-6, if you roll a one with this dice, it is confiscated. X this dice's value with selected dice. That number is now this dice's value
 
 legendary:
+limit in deck: 1
 
 ticking dice: 1,1,2,2,3,3, when this dice is rolled 5 times, multiply all dice values with the added value of this dices last 5 values
 vampire dice: 10,20,30,40,50,60, all dice in a radius around this dice is confiscated. +10 value to this dice for every dice confiscated in this way
 
-cards: 
+## cards: 
 You can play cards before or after you roll your dice
 
 common:
@@ -198,5 +197,23 @@ life drain: you heal half of the damage you deal with your next attack
 stun: enemy cant attack next turn
 
 legendary: 
+limit in deck: 1
+
+Power rush: X10 damage
 
 
+## items:
+you can only carry 3 items at a time
+
+items are completely random and don't have rarities
+
+Giants heart: + 10 max HP
+reactive armor: + X armor when attacked (X being damage recieved / 2)
+lucky charm: increases your luck by  %25
+cracked crystal: dice have X2
+warriors blade: at the start of every battle you gain + 4 + X strength (X: floor / 2, then rounded down)
+
+## shop: 
+each shop has 3 slots, and each has a %50 chance to have either a card or a dice.
+when an enemy is killed, you get coins according to their max HP +, - or / X (X: difficulty: easy: + 10 normal: +0 hard: -10 impossable: / 2)
+AI note: you may choose and say how nmuch things cost according to the values I've given you
