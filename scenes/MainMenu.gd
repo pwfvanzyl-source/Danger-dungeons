@@ -7,6 +7,7 @@ var save_slots_container: VBoxContainer
 var character_selection_panel: PanelContainer
 var character_buttons_container: VBoxContainer
 var selected_slot: int = 0
+var has_saved_run: bool = false
 const CHARACTER_LIST = ["Charlie", "Goob", "Marshy", "Liken", "Fromo"]
 
 func _ready() -> void:
@@ -36,6 +37,7 @@ func _ready() -> void:
 		var character_button: Button = character_buttons_container.get_node("%sButton" % character_name)
 		character_button.pressed.connect(_on_character_pressed.bind(character_name))
 
+	load_saved_run()
 	show_main_menu()
 
 func show_main_menu() -> void:
@@ -54,7 +56,18 @@ func show_character_selection(slot_index: int) -> void:
 	save_slots_panel.visible = false
 	character_selection_panel.visible = true
 
+func load_saved_run() -> void:
+	has_saved_run = game_state.load_from_file(game_state.save_path)
+	if has_saved_run and game_state.selected_character != "":
+		print("Loaded saved run for %s on floor %d" % [game_state.selected_character, game_state.current_floor])
+
 func _on_play_pressed() -> void:
+	if has_saved_run and game_state.selected_character != "":
+		var game_scene: String = "res://scenes/game.tscn"
+		var err: int = get_tree().change_scene_to_file(game_scene)
+		if err != OK:
+			push_error("Failed to change scene to %s" % game_scene)
+		return
 	show_save_slots()
 
 func _on_save_slot_pressed(slot_index: int) -> void:

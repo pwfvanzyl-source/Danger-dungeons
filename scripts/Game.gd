@@ -177,4 +177,4 @@ func _on_save_pressed() -> void:
 
 func _on_quit_pressed() -> void:
 	_on_save_pressed()
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://scenes/MainMenu.tscn")

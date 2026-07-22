@@ -8,6 +8,7 @@ var player_hp: int = 100
 var player_max_hp: int = 100
 var player_strength: int = 4
 var player_shield: int = 0
+var save_path: String = "user://danger_dungeons_save.dat"
 
 func reset() -> void:
 	selected_character = ""
