@@ -37,6 +37,10 @@ text = "Hero: "
 layout_mode = 2
 text = "Turn: Player"
 
+[node name="StatusLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Status: None"
+
 [node name="PlayerStatsLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 text = "You - HP: 100/100 | Strength: 4 | Shield: 0"

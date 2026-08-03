@@ -8,7 +8,6 @@ var player_hp: int = 100
 var player_max_hp: int = 100
 var player_strength: int = 4
 var player_shield: int = 0
-var save_path: String = "user://danger_dungeons_save.dat"
 
 func reset() -> void:
 	selected_character = ""
@@ -18,6 +17,17 @@ func reset() -> void:
 	player_max_hp = 100
 	player_strength = 4
 	player_shield = 0
+
+func get_slot_path(slot: int) -> String:
+	return "user://danger_dungeons_save_slot_%d.dat" % slot
+
+func delete_save(path: String) -> void:
+	var dir = DirAccess.open("user://")
+	if dir == null:
+		return
+	var file_name = path.get_file()
+	if dir.file_exists(file_name):
+		dir.remove_file(file_name)
 
 func save_to_file(path: String) -> void:
 	var file = FileAccess.open(path, FileAccess.WRITE)

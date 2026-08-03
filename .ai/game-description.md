@@ -142,7 +142,7 @@ floor 81-100
 %10 common %10 uncommon %40 rare %30 epic %10 legendary
 
 ## dice's:
-You have a limit of 20 dice in your dice bag. each turn, seven dice are taken out of the bag. Dice only go back into the bag once youve rolled them or if the battle is done. dice can be permanently removed at the scrapper. If a dice is confiscated, it will not return to your dice bag till the end of battle. If all dice are confiscated, confiscated dice are returned to your dice bag.
+You have a limit of 20 dice in your dice bag. each turn, seven dice are taken out of the bag. Dice only go back into the bag once youve rolled them or if the battle is done. dice can be permanently removed at the scrapper. If a dice is confiscated, it will not return to your dice bag till the end of battle. If all dice are confiscated, confiscated dice are returned to your dice bag. You can only roll 3 dice, but for every boss defeated, you can roll 1 more
 
 common:
 
